@@ -1,10 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Button from './Button'
 
-const Header = (props) => {
+const Header = ({title}) => {
+    const onClick = e => {
+        console.log('click');
+        console.log(e);
+    };
+
     return (
-        <header>
-            <h1>{props.title}</h1>
+        <header className="header">
+            <h1>{title}</h1>
+            <Button onClick={onClick} message="add" backgroundColor="#9872ed" color="white"/>
         </header>
     )
 }
@@ -24,5 +31,6 @@ Header.propTypes = {
 //     text-align: Center;
 //     spacing: 1.3em;
 // }
+
 export default Header
 
