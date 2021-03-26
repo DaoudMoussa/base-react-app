@@ -54,6 +54,10 @@ body {
   width: 100%;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .task {
   background: #f4f4f4;
   margin: 5px;
@@ -69,6 +73,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.task h3 svg {
+  opacity: 0.5;
 }
 
 .add-form {
